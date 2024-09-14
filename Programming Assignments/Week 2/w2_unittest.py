@@ -367,7 +367,6 @@ def test_train_naive_bayes(target, freqs, train_x, train_y):
 
         count_good = 0
         for key, value in test_case["expected"]["loglikelihood"].items():
-
             if np.isclose(result2[key], value):
                 count_good += 1
 
